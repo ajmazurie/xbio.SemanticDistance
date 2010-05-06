@@ -1,0 +1,9 @@
+
+ec/ec.data
+	EC ontology (Mar 2006)
+
+go/go.with_iea.data
+	GO ontology, with GO annotations inferred electronically included (Aug 14, 2006)
+
+go/go.without_iea.data
+	GO ontology, with GO annotations inferred electronically excluded (Aug 14, 2006)
