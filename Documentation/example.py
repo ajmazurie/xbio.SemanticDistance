@@ -2,7 +2,7 @@
 
 # First phase: marshalling information about the ontology
 
-from SemanticDistance import SemanticDistanceConstructor
+from SemanticDistance import InformationContent
 
 # Declaration of the new ontology.
 # Let's say we have 6 terms organized like this (A is the root):
@@ -39,22 +39,19 @@ parents = {
 
 # Finally, we use SemanticDistanceConstructor to calculate the
 # information content of each node ...
-sdc = SemanticDistanceConstructor(usage, parents)
-
-sdc.find_ancestors()
-sdc.calculate_ic()
+ic = InformationContent(usage, parents)
 
 # ... then to save it
-sdc.save("example.data")
+ic.to_file("example.data")
 
 #:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Second phase: use of this information to calculate semantic distances
 
-from SemanticDistance import SemanticDistanceLoader
+from SemanticDistance import SemanticDistance
 
 # First, loading the information generated for this ontology
-sd = SemanticDistanceLoader("example.data")
+sd = SemanticDistance.from_file("example.data")
 
 # You can then calculate the distance between two terms by doing
 print sd.distance_between('B', 'B') # return 0.0 (the lowest distance)

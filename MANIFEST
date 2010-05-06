@@ -1,0 +1,5 @@
+setup.py
+SemanticDistance/__init__.py
+SemanticDistance/sd.py
+Documentation/index.html
+LICENSE

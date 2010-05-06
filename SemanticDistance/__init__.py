@@ -13,10 +13,5 @@
 #  Aurelien Mazurie, http://oenone.net/contact/
 #  New releases and other tools: http://oenone.net/tools/
 
-__VERSION = "1.1b"
-__DATE = "September 27, 2006"
+from sd import InformationContent, SemanticDistance, NoInformationContent, NoAncestor, NoCommonAncestor
 
-from sd import SemanticDistance, SemanticDistanceLoader
-from sd_constructor import SemanticDistanceConstructor
-from sd_db import SemanticDistanceDB
-from sd_helpers import GoHelper, EcHelper, PATH
