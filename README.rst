@@ -9,6 +9,16 @@ SemanticDistance
 
 .. [Lin1998] Lin D: An Information-Theoretic Definition of Similarity. In Proceedings of the Fifteenth International Conference on Machine Learning, Morgan Kaufmann Publishers Inc. 1998:296-304.
 
+Keywords
+--------
+
+Bioinformatics, Ontology, Distance, Python
+
+Contact
+-------
+
+Aurelien Mazurie, ajmazurie@oenone.net
+
 Getting started
 ---------------
 
