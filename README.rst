@@ -1,9 +1,9 @@
 SemanticDistance
 ================
 
-SemanticDistance is a Python_ library which calculates distances between terms in an ontology; e.g., `Gene Ontology <http://www.geneontology.org/>`_ or `EC numbers <http://en.wikipedia.org/wiki/EC_number>`_.
+``SemanticDistance`` is a Python_ library for calculating distances between terms in an ontology; e.g., `Gene Ontology <http://www.geneontology.org/>`_ or `EC numbers <http://en.wikipedia.org/wiki/EC_number>`_.
 
-SemanticDistance is based on the work from Lord et al. 2003 [Lord2003]_ and Lin 1998 [Lin1998]_, which use the notion of information content to compare terms. The more a term is used to annotate an object, and the less informative it is considered. The root node of an ontology, being used for all annotations, is the less informative. The distance between two terms is then calculated based on the information content of the parent terms they share. Two terms that share only the root term of the ontology will have the highest distance.
+``SemanticDistance`` is based on the work from Lord et al. 2003 [Lord2003]_ and Lin 1998 [Lin1998]_, which use the notion of information content to compare terms. The more a term is used to annotate an object, and the less informative it is considered. The root node of an ontology, being used for all annotations, is the less informative. The distance between two terms is then calculated based on the information content of the parent terms they share. Two terms that share only the root term of the ontology will have the highest distance.
 
 .. [Lord2003] Lord P, Stevens R, Brass A, Goble C: Investigating semantic similarity measures across the Gene Ontology: the relationship between sequence and annotation. Bioinformatics 2003, 19(10):1275-83.
 
@@ -12,7 +12,7 @@ SemanticDistance is based on the work from Lord et al. 2003 [Lord2003]_ and Lin 
 Getting started
 ---------------
 
-- Download the latest version of SemanticDistance from http://github.com/ajmazurie/SemanticDistance
+- Download the latest version of ``SemanticDistance`` from http://github.com/ajmazurie/SemanticDistance
 - Unzip the downloaded file
 - Run ``python setup.py sdist``, then ``easy_install dist/SemanticDistance-xxx.tar.gz``, 'xxx' being the version number of the library
 
@@ -25,7 +25,7 @@ From then you only have to import ``SemanticDistance`` to use the library::
 	
 		 ,--> B (5) -->.    ,--> D (5)
 		/               \  /
-	  A (3)             C (2)
+	     A (3)             C (2)
 		\               /  \
 		 `--> E (2) -->'    `--> F (2)
 	
@@ -44,7 +44,7 @@ From then you only have to import ``SemanticDistance`` to use the library::
 	
 	# At this stage the two variables 'ancestors' and 'ic' contains all what is
 	# needed to calculate a distance between terms in the ontology. These
-	# variables may be serialized for further used.
+	# variables may be serialized for further use.
 	
 	# Step 4: we create a 'semantic_distance' class with these information
 	sd = SemanticDistance.semantic_distance(ancestors, ic)

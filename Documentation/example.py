@@ -26,7 +26,7 @@ ancestors, ic = SemanticDistance.process(direct_parents, usage_count)
 
 # At this stage the two variables 'ancestors' and 'ic' contains all what is
 # needed to calculate a distance between terms in the ontology. These
-# variables may be serialized for further used.
+# variables may be serialized for further use.
 
 # Step 4: we create a 'semantic_distance' class with these information
 sd = SemanticDistance.semantic_distance(ancestors, ic)
