@@ -22,8 +22,8 @@ Aurelien Mazurie, ajmazurie@oenone.net
 Getting started
 ---------------
 
-- Download the latest version of ``SemanticDistance`` from http://github.com/ajmazurie/SemanticDistance
-- Unzip the downloaded file
+- Download the latest version of ``SemanticDistance`` from http://github.com/ajmazurie/SemanticDistance/downloads
+- Unzip the downloaded file, then place yourself in the resulting directory
 - Run ``python setup.py sdist``, then ``easy_install dist/SemanticDistance-xxx.tar.gz``, 'xxx' being the version number of the library
 
 From then you only have to import ``SemanticDistance`` to use the library::
